@@ -83,7 +83,6 @@ int main()
 {
     unsigned int cycle = 0;
     bigIntegersMultiplication();
-    cout << "hello! cloud studio" << endl;
     cout << "hello! cloud IDE!" << endl;
     return 0;
 }
