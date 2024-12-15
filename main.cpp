@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//大整数乘法方式，动态规划法
 void bigIntegersMultiplication()
 {
     unsigned int length1 = 0;
@@ -68,7 +69,7 @@ void bigIntegersMultiplication()
         high--;
     }
 
-    cout << "products:";
+    cout << "products:";//输出非零高位可能存在错误，缓冲数组中的进位未清零导致输出bug
     for(unsigned int i = high;i > 0;--i)
     {
         cout << buffer[i];
